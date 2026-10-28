@@ -22,8 +22,8 @@ async function seed() {
     // ── Admin ────────────────────────────────────────────────────────────────
     const admin = await User.create({
       name:         process.env.ADMIN_NAME || 'System Administrator',
-      email:        process.env.ADMIN_EMAIL || process.env.COLLEGE_EMAIL || 'admin@xyzcollege.edu.in',
-      password:     process.env.ADMIN_PASSWORD || process.env.ADMIN_DEFAULT_PASSWORD || 'Admin@XYZ2024',
+      email:        process.env.ADMIN_EMAIL || process.env.COLLEGE_EMAIL || 'adt@jrcollege.edu.in',
+      password:     process.env.ADMIN_PASSWORD || process.env.ADMIN_DEFAULT_PASSWORD || 'Admin@123',
       role:         'admin',
       isFirstLogin: false,
     });
